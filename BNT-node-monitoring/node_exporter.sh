@@ -29,4 +29,4 @@ sudo systemctl enable node_exporter
 sudo systemctl start node_exporter
 
 echo -e "\e[1m\e[32mInstallation finished... \e[0m" && sleep 1
-echo -e "\e[1m\e[32mPlease make sure ports 9100 and 9300 are open \e[0m" && sleep 1
+echo -e "\e[1m\e[32mPlease make sure ports 9100 is open \e[0m" && sleep 1
