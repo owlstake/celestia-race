@@ -12,7 +12,7 @@ The following minimum hardware requirements are recommended for running a light 
    
 # Deploy automatic
 ```
-
+wget -O auto-install-light-node.sh https://raw.githubusercontent.com/owlstake/celestia-race/main/deploy-light-node/auto-install-light-node.sh &&
 ```
 
 # Deploy manual
