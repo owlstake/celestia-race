@@ -37,7 +37,7 @@ After=network-online.target
 
 [Service]
 User=$USER
-ExecStart=/usr/bin/go run $HOME/celestia-race/BNT-web-UI-PFB/random-number-go-web/go-web-api.go
+ExecStart=$(which go) run $HOME/celestia-race/BNT-web-UI-PFB/random-number-go-web/go-web-api.go
 Restart=always
 
 [Install]
