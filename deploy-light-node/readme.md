@@ -70,3 +70,17 @@ sudo systemctl daemon-reload
 sudo systemctl enable celestia-lightd
 sudo systemctl start celestia-lightd
 ```
+
+# Show the NodeID
+```
+NODE_TYPE=light
+AUTH_TOKEN=$(celestia $NODE_TYPE auth admin --p2p.network blockspacerace)
+curl -X POST -H "Authorization: Bearer $AUTH_TOKEN" -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","id":0,"method":"p2p.Info","params":[]}' http://localhost:26658 | jq .result.ID
+```
+# Backup the data
+```
+tar -czvf /home/backup-celestia.tar.gz $HOME/.celestia-light-blockspacerace-0/* 
+```
+### After that you can use WinSCP to copy the backup data to safe location
+
+and remember to backup the file locale in $HOME/data-key.txt too (your celestia seed key)
