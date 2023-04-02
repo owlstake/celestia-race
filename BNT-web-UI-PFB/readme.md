@@ -67,3 +67,11 @@ Open web browser and fill with http://<IP-web-server>:8080
   "My hex-encoded message": "36a4a07cedbe1a2cf71f09fd8069927130c53dcb"
 }
 ```
+# The Main WEB UI
+
+### Install nodejs
+```
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install nodejs -y
+
+```
