@@ -13,11 +13,11 @@
     {{!-- Navigation links --}}
     <nav>
 	    <div class="logo">
-		      <img src="https://github.com/owlstake/owlstake/raw/main/Logo_white.png" alt="Owlstake Logo" style="max-width: 150px; max-height: 150px;">
+		      <img src="https://github.com/owlstake/owlstake/raw/main/Logo_white.png" alt="Owlstake Logo" style="max-width: 64px; max-height: 64px;">
 	    </div>
 	    <div class="center-text">
-		      <h4>Celestia Bonus Task</h4>
-		        <h6>PFB UI submit</h6>
+		    <h4>Celestia Bonus Task</h4>
+		    <h6>PFB UI submit</h6>
 	    </div>
     </nav>
 
@@ -50,7 +50,7 @@
                         <input type="text" class="form-control" id="fee" name="fee" value="{{fee}}" placeholder="2000">
                     </div>
                     <div class="mb-3">
-                        <label for="api-url" class="form-label">API Url (optinal)</label>
+                        <label for="api-url" class="form-label">API Url (Optinal)</label>
                         <input type="text" class="form-control" id="api-url" name="api_url" placeholder="default light node" value="{{api_url}}">
                     </div>
                     
@@ -65,12 +65,26 @@
             <h4 class="alert alert-danger mt-4">{{error_message}}</h4>
         {{/if}}
 
-        {{#if message }}
-            <h4 class="alert alert-success mt-4">{{message}}</h4>
-        {{/if}}        
+        {{#if show_response }}
+        <div class="alert alert-success mt-4" role="alert">         
+            {{#if height}}
+            <div>
+                Height: {{height}}
+            </div>
+            {{/if}}
+            {{#if txhash}}
+            <div>
+                txhash: {{txhash}}
+            </div>
+            {{/if}}
+            {{#if transaction_url}}
+            <div>
+                <a href="{{transaction_url}}" target="_blank">Transaction Link</a>
+            </div>
+            {{/if}}        
+        </div>
+        {{/if}}             
     </div>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
 
     <script>
         document.getElementById("quest-form").addEventListener('submit', function(ev) {            
