@@ -63,8 +63,8 @@ echo "node is running"
 # show the NodeID
 NODE_TYPE=light
 AUTH_TOKEN=$(celestia $NODE_TYPE auth admin --p2p.network blockspacerace)
-echo "Node ID below here:"
-curl -X POST -H "Authorization: Bearer $AUTH_TOKEN" -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","id":0,"method":"p2p.Info","params":[]}' http://localhost:26658 | jq -r '.result.ID'
+echo "Node ID below here:" >> $HOME/data-key.txt
+curl -X POST -H "Authorization: Bearer $AUTH_TOKEN" -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","id":0,"method":"p2p.Info","params":[]}' http://localhost:26658 | jq -r '.result.ID' >> $HOME/data-key.txt
 
 # backup the node
 tar -czvf /home/backup-celestia.tar.gz $HOME/.celestia-light-blockspacerace-0/* 
