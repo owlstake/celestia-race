@@ -44,7 +44,7 @@ After=network-online.target
 
 [Service]
 User=$USER
-ExecStart=$(which celestia) light start --core.ip https://rpc-blockspacerace.pops.one --core.rpc.port 26657 --core.grpc.port 9090 --keyring.accname my_celes_key --metrics.tls=false --metrics --metrics.endpoint otel.celestia.tools:4318 --gateway --gateway.addr localhost --gateway.port 26659 --p2p.network blockspacerace
+ExecStart=$(which celestia) light start --core.ip https://rpc-blockspacerace.pops.one --core.rpc.port 26657 --core.grpc.port 9090 --keyring.accname my_celes_key --metrics.tls=false --metrics --metrics.endpoint otel.celestia.tools:4318 --gateway --gateway.addr 0.0.0.0 --gateway.port 26659 --p2p.network blockspacerace
 Restart=on-failure
 RestartSec=3
 LimitNOFILE=4096
