@@ -16,3 +16,11 @@ git clone https://github.com/owlstake/celestia-race
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install nodejs -y
 ```
+cd $HOME/celestia-race/BNT-web-UI-PFB/web-ui
+cp env.example .env
+
+### you need to change the var in the .env file
+
+### install and start web ui
+npm install
+npm start
