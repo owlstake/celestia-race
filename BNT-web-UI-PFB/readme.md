@@ -1,5 +1,6 @@
 # This is Web service API to generate your own namespace_id and data values
-
+Here is my demo:
+***https://celestia-pfb.owlstake.com***
 
 
 ### Clone my repo
@@ -16,11 +17,17 @@ git clone https://github.com/owlstake/celestia-race
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install nodejs -y
 ```
+### Move to webui folder
+```
 cd $HOME/celestia-race/BNT-web-UI-PFB/web-ui
-cp env.example .env
-
+```
 ### you need to change the var in the .env file
-
+```
+cp env.example .env
+nano .env
+```
 ### install and start web ui
+```
 npm install
 npm start
+```
