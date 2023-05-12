@@ -20,19 +20,25 @@ Demo link: https://nft.owlstake.com
 
 1. Deploy a [Marketplace V3](https://thirdweb.com/thirdweb.eth/MarketplaceV3) contract
 2. Deploy a [NFT Collection](https://thirdweb.com/thirdweb.eth/TokenERC721) contract
-3. Clone this repository
+3. Install nodejs
+```
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install nodejs -y
+source ~/.bashrc
+```
+4. Clone this repository
 ```
 cd $HOME
 git clone https://github.com/owlstake/celestia-race
 cd $HOME/BNT-market-dApp
 ```
-4. Create an .env file
+5. Create an .env file
 ```
 cp env.example .env
 nano .env
 ```
-4. Plug your contract addresses and chain in the .env file.
-5. Install the dependencies, build and run
+6. Plug your contract addresses and chain in the .env file.
+7. Install the dependencies, build and run
 ```
 npm install
 npm run build
