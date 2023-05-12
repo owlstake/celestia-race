@@ -1,0 +1,177 @@
+.navContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  background-color: transparent !important;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.nav {
+  padding-left: 2em;
+  padding-right: 2em;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+  max-width: 1260px;
+  background-color: transparent !important;
+}
+
+.navLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.15s ease-in-out;
+}
+
+.navMiddle {
+  display: flex;
+  margin-left: 12px;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.homeLink:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.navRight {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileImage {
+  margin-top: 6px;
+  transition: all 0.15s ease-in-out;
+}
+
+.profileImage:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.homeLink {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.buttonLink:hover {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.connectButton {
+  color: #fff !important;  
+  background-image: linear-gradient(
+      to left,
+      var(--color-primary) 0%,
+      var(--color-secondary) 101.52%
+    ) !important;
+}
+
+.switchNetworkButton {
+  width: 140px;
+  all: unset;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 12px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  background-image: linear-gradient( to left, var(--color-secondary) 0%, var(--color-quaternary) 101.52% ); 
+  color:#fff; 
+  cursor: pointer;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  -webkit-animation: animation-plwpox 300ms ease;
+  animation: animation-plwpox 300ms ease;
+}
+
+.faucetButton {
+  width: 140px;
+  all: unset;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 12px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  background-image: linear-gradient( to left, var(--color-quaternary) 0%, var(--color-tertiary) 101.52% ); 
+  color:#fff; 
+  cursor: pointer;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  -webkit-animation: animation-plwpox 300ms ease;
+  animation: animation-plwpox 300ms ease;
+}
+
+
+.switchNetworkButton:disabled, 
+.faucetButton:disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+/* Sreens less than 720px */
+@media (max-width: 500px) {
+  .navConnect {
+    display: none !important;
+  }
+}

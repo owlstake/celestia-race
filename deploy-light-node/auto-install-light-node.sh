@@ -8,7 +8,7 @@ sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential gi
 echo "Install package finished"
 
 # Install golang
-ver="1.20" 
+ver="1.20.3" 
 cd $HOME 
 wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz" 
 sudo rm -rf /usr/local/go 
@@ -24,7 +24,7 @@ cd $HOME
 rm -rf celestia-node 
 git clone https://github.com/celestiaorg/celestia-node.git 
 cd celestia-node/ 
-git checkout tags/v0.9.1
+git checkout tags/v0.9.4
 make build 
 make install 
 make cel-key
