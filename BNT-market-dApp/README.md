@@ -19,13 +19,14 @@ Demo link: https://nft.owlstake.com
 ## Using this repo
 
 1. Deploy a [Marketplace V3](https://thirdweb.com/thirdweb.eth/MarketplaceV3) contract
-2. Clone this repository
-3. Create an .env file
+2. Deploy a [NFT Collection](https://thirdweb.com/thirdweb.eth/TokenERC721) contract
+3. Clone this repository
+4. Create an .env file
 ```
 cp env.example .env
 nano .env
 ```
-4. Plug your contract addresses and chain in the [contractAddresses.ts](/const/contractAddresses.ts) file.
+4. Plug your contract addresses and chain in the .env file.
 5. Install the dependencies, build and run
 ```
 npm install

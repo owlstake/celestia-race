@@ -66,7 +66,7 @@ echo "export DA_BLOCK_HEIGHT=$(curl https://rpc-blockspacerace.pops.one/block | 
 source $HOME/.bash_profile
 source /root/.bashrc
 ```
-### create service
+### Create service
 ```
 sudo tee /etc/systemd/system/ethermint-rollkitd.service > /dev/null <<EOF
 [Unit]
@@ -84,13 +84,13 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 EOF
 ```
-### start service
+### Start service
 ```
 sudo systemctl daemon-reload
 sudo systemctl enable ethermint-rollkitd
 sudo systemctl restart ethermint-rollkitd
 ```
-### show log
+### Show log
 ```
 journalctl -fu ethermint-rollkitd -o cat
 ```
