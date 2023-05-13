@@ -1,18 +1,18 @@
 # NFT Marketplace
 
-Create an NFT marketplace on top of your NFT collection on ethermint rollup.
+Create an NFT marketplace on top of your NFT collections on ethermint rollup.
 
 Demo link: https://nft.owlstake.com
 
 ## Features
 
-- View all NFTs from your collection and their status on the marketplace on the [buy](/pages/buy.tsx) page.
+- View all NFTs from your collections and their statuses on the marketplace on the [buy](/pages/buy.tsx) page.
 
 - Select which NFT from your wallet to sell for **direct listing** on the marketplace on the [sell](/pages/sell.tsx) page.
 
-- View all NFTs a user owns from your collection on the [profile](/pages/profile/%5Baddress%5D.tsx) pages.
+- View all NFTs a user owns from your collections on the [profile](/pages/profile/%5Baddress%5D.tsx) page.
 
-- Buy NFTs directly from the marketplace on the [item](/pages/token/%5BcontractAddress%5D/%5BtokenId%5D.tsx) pages.
+- Buy NFTs directly from the marketplace on the [item](/pages/token/%5BcontractAddress%5D/%5BtokenId%5D.tsx) page.
 
 <br/>
 
@@ -37,8 +37,8 @@ cd $HOME/BNT-market-dApp
 cp env.example .env
 nano .env
 ```
-6. Plug your contract addresses and chain in the .env file.
-7. Install the dependencies, build and run
+6. Put your contract addresses and chain in the .env file.
+7. Install the dependencies, then build and run
 ```
 npm install
 npm run build
@@ -46,14 +46,20 @@ npm run start
 ```
 <br/>
 
-_Note: This requires [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [Git](https://git-scm.com/downloads). [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable) is also recommended._
+_Note: It requires [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [Git](https://git-scm.com/downloads). [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable) is also recommended._
 
 <br/>
 
-Here is some screenshot of the project:
+Below are some screenshots and a video of the project:
+
+- Home page:
 
 ![Home page](screenshot/home.png)
 
+- Buy page:
+
 ![Buy page](screenshot/buy.png)
+
+- Watch the video:
 
 [![Watch the video](screenshot/thumnail.png)](https://www.youtube.com/embed/9l1L0Gpkbkg)
