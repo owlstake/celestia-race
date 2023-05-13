@@ -1,10 +1,10 @@
-1. Deploy the light-node automaticaly
+1. Deploy the light-node automatically
 ```
 wget -O auto-install-light-node.sh https://raw.githubusercontent.com/owlstake/celestia-race/main/deploy-light-node/auto-install-light-node.sh && chmod +x auto-install-light-node.sh && ./auto-install-light-node.sh
 ```
 2. Request faucet funding in Celestia's [Discord](https://discord.com/channels/638338779505229824/1077531922022015026)
 
-3. Deploy ethermint rollup automaticaly
+3. Deploy ethermint rollup automatically
 ```
 wget -O deploy-ethermintd.sh https://raw.githubusercontent.com/owlstake/celestia-race/main/BNT-deploy-ethermint-rollup/deploy-ethermintd.sh && chmox +x deploy-ethermintd.sh && ./deploy-ethermintd.sh
 ```
@@ -17,9 +17,9 @@ ERR DA layer submission failed error="rpc error: code = NotFound desc = account 
 
 # Bonus:
 
-Deploy ethermint rollup mannual with detail:
+Deploy ethermint rollup mannual with details:
 
-### Change your light node ip
+### Change your light node IP address
 ```
 echo "export LIGHT_NODE_IP=localhost" >> $HOME/.bash_profile
 ```
@@ -45,7 +45,7 @@ curl -L https://foundry.paradigm.xyz | bash
 ```
 source /root/.bashrc
 ```
-### Other ways to use foundryup, and other documentation, can be found here. Happy forging!
+### Other ways to use foundryup, and other documentations can be found here. Happy forging!
 ```
 foundryup
 ```
@@ -90,7 +90,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable ethermint-rollkitd
 sudo systemctl restart ethermint-rollkitd
 ```
-### Show log
+### Show logs
 ```
 journalctl -fu ethermint-rollkitd -o cat
 ```
