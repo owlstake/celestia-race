@@ -56,3 +56,4 @@ Here is some screenshot of the project:
 
 ![Buy page](screenshot/buy.png)
 
+https://github.com/owlstake/celestia-race/raw/main/BNT-market-dApp/screenshot/record.mp4
