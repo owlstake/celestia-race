@@ -46,7 +46,7 @@ npm run start
 ```
 <br/>
 
-_Note: It requires [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [Git](https://git-scm.com/downloads). [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable) is also recommended._
+_Note: It requires [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm), and [Git](https://git-scm.com/downloads). [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable) is also recommended._
 
 <br/>
 
