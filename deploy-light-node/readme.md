@@ -10,17 +10,17 @@ The following minimum hardware requirements are recommended for running a light 
    
    Bandwidth: 56 Kbps for Download/56 Kbps for Upload
    
-# Deploy automatic
+# Deploy automatically
 ```
 wget -O auto-install-light-node.sh https://raw.githubusercontent.com/owlstake/celestia-race/main/deploy-light-node/auto-install-light-node.sh && chmod +x auto-install-light-node.sh && ./auto-install-light-node.sh
 ```
 
-# Deploy manual
+# Deploy manuallly
 ```
 # Update system
 sudo apt update && sudo apt upgrade -y
 
-# Install package
+# Install packages
 sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential git make ncdu -y
 
 # Install golang
@@ -65,7 +65,7 @@ LimitNOFILE=4096
 WantedBy=multi-user.target
 EOF
 
-# Reload, enable and start the service
+# Reload, enable, and start the service
 sudo systemctl daemon-reload
 sudo systemctl enable celestia-lightd
 sudo systemctl start celestia-lightd
@@ -81,6 +81,6 @@ curl -X POST -H "Authorization: Bearer $AUTH_TOKEN" -H 'Content-Type: applicatio
 ```
 tar -czvf /home/backup-celestia.tar.gz $HOME/.celestia-light-blockspacerace-0/* 
 ```
-### After that you can use WinSCP to copy the backup data to safe location
+### After that you can use WinSCP to copy the backup data to a safe location
 
-and remember to backup the file locale in $HOME/data-key.txt too (your celestia seed key)
+and remember to backup the file located in $HOME/data-key.txt too (your celestia seed key)
