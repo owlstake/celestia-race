@@ -1,4 +1,4 @@
-1. Deploy the light-node automatically
+1. Deploy light-node automatically
 ```
 wget -O auto-install-light-node.sh https://raw.githubusercontent.com/owlstake/celestia-race/main/deploy-light-node/auto-install-light-node.sh && chmod +x auto-install-light-node.sh && ./auto-install-light-node.sh
 ```
@@ -17,7 +17,7 @@ ERR DA layer submission failed error="rpc error: code = NotFound desc = account 
 
 # Bonus:
 
-Deploy ethermint rollup mannual with details:
+Deploy ethermint rollup mannually with details:
 
 ### Change your light node IP address
 ```
