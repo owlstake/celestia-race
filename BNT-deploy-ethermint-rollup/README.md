@@ -1,3 +1,6 @@
+# Part 1: [Deploy Ethermint rollup](https://github.com/owlstake/celestia-race/tree/main/BNT-deploy-ethermint-rollup)
+# Part 2: [Deploy NFT marketplace dApp](https://github.com/owlstake/celestia-race/tree/main/BNT-market-dApp)
+
 1. Deploy light-node automatically
 ```
 wget -O auto-install-light-node.sh https://raw.githubusercontent.com/owlstake/celestia-race/main/deploy-light-node/auto-install-light-node.sh && chmod +x auto-install-light-node.sh && ./auto-install-light-node.sh
