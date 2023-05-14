@@ -1,5 +1,5 @@
 # Part 1: [Deploy Ethermint rollup](https://github.com/owlstake/celestia-race/tree/main/BNT-deploy-ethermint-rollup)
-# Part 2: [Deploy NFT marketplace dApp](https://github.com/owlstake/celestia-race/tree/main/BNT-market-dApp)
+# Part 2: [Deploy NFT marketplace dApp](https://github.com/owlstake/celestia-race/tree/main/BNT-market-dApp)  (See below guide)
 
 # NFT Marketplace
 
