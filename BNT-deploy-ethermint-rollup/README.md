@@ -9,7 +9,7 @@ wget -O auto-install-light-node.sh https://raw.githubusercontent.com/owlstake/ce
 
 3. Deploy ethermint rollup automatically
 ```
-wget -O deploy-ethermintd.sh https://raw.githubusercontent.com/owlstake/celestia-race/main/BNT-deploy-ethermint-rollup/deploy-ethermintd.sh && chmox +x deploy-ethermintd.sh && ./deploy-ethermintd.sh
+wget -O deploy-ethermintd.sh https://raw.githubusercontent.com/owlstake/celestia-race/main/BNT-deploy-ethermint-rollup/deploy-ethermintd.sh && chmod +x deploy-ethermintd.sh && ./deploy-ethermintd.sh
 ```
 We have kickstarted our ***ethermintd*** network
 
