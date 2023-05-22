@@ -13,6 +13,10 @@ wget -O deploy-ethermintd.sh https://raw.githubusercontent.com/owlstake/celestia
 ```
 We have kickstarted our ***ethermintd*** network
 
+4. Show Private key
+```
+ethermintd keys unsafe-export-eth-key mykey --keyring-backend test
+```
 If you see this error in your logs, it means that your Light node address has not been funded yet
 ```
 ERR DA layer submission failed error="rpc error: code = NotFound desc = account celestia1jxxxxxxxxx not found" attempt=1 module=BlockManager
