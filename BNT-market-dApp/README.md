@@ -33,7 +33,7 @@ source ~/.bashrc
 ```
 cd $HOME
 git clone https://github.com/owlstake/celestia-race
-cd $HOME/BNT-market-dApp
+cd $HOME/celestia-race/BNT-market-dApp
 ```
 5. Create an .env file
 ```
